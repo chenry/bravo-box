@@ -6,7 +6,6 @@ import com.bravolt.bravobox.bean.MovieListResponseBuilder;
 import com.bravolt.bravobox.bean.ProcessMovieListRequest;
 import com.bravolt.bravobox.bean.ProcessMovieRequest;
 import com.bravolt.bravobox.bean.RentMovie;
-import com.bravolt.bravobox.bean.ReturnMovie;
 
 public class RouteBuilder extends org.apache.camel.builder.RouteBuilder {
 
@@ -29,7 +28,5 @@ public class RouteBuilder extends org.apache.camel.builder.RouteBuilder {
 		from("properties:inbound.rent")
 			.bean(RentMovie.class);
 		
-		from("properties:inbound.return")
-			.bean(ReturnMovie.class);
 	}
 }
