@@ -26,7 +26,6 @@ public class BravoBoxTest extends CamelSpringTestSupport {
 	private static final String CONTEXT = "META-INF/spring/camel-context.xml";
 	private static final String ENDPOINT_LIST = "properties:inbound.movie.list";
 	private static final String ENDPOINT_INFORMATION = "properties:inbound.movie.information";
-	private static final String ENDPOINT_LATE = "properties:inbound.notify.late";
 	private static final String ENDPOINT_RENT = "properties:inbound.rent";
 	private static final String ENDPOINT_RETURN = "properties:inbound.return";
 
@@ -119,11 +118,6 @@ public class BravoBoxTest extends CamelSpringTestSupport {
 			assertTrue(types.contains(type));
 		}
 		assertEquals(5, responses.length);
-	}
-	
-	@Test
-	public void testMovieLateNotify() {
-		template.requestBody(ENDPOINT_LATE, new Object());
 	}
 	
 	@Test
