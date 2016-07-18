@@ -32,10 +32,10 @@ The first thing we have to do is create a search. The search should, somehow, ta
 this one together. A sample CSV (our database) is available in `src/test/resources/data`. The solution should search 
 through all of the movies in the CSV and return only those that have a type that matches the input. A movie can have multiple types associate with it. These types are separated by a `;`. If the input types is empty, all movies should be returned.
 
-** Input Data **
+**Input Data**
 * Type
 
-** Response Data **
+**Response Data**
 * IMDB ID
 * Title
 * Type
@@ -47,14 +47,14 @@ Now we need allow people to rent the movies. To ensure that the move is eventual
 credit card information, email (for notifications), zip and the due date (we will let the calling application set that 
 to allow for multi-day rentals).
 
-** Input Data **
+**Input Data**
 * IMDB ID
 * Credit Card Number
 * Credit Card Expiration
 * Zip Code
 * Email
 
-** Response Data **
+**Response Data**
 * Approval
 
 Problem 3
@@ -62,10 +62,10 @@ Problem 3
 
 Returns need to be made obviously. So, let's implement the reverse of the work we did in **Problem 2**.
 
-** Input Data **
+**Input Data**
 * IMDB ID
 
-** Response Data **
+**Response Data**
 * Returned Status
 
 Problem 4
@@ -75,10 +75,10 @@ Before we charge a customer, we should probably notify them that they should ret
 service in the world, we need to encourage our customers to think about the other users who might want to view the 
 movie.
 
-** Input Data **
+**Input Data**
 * None
 
-** Response Data **
+**Response Data**
 * None
 
 Notes
@@ -86,7 +86,7 @@ Notes
 
 Some possible solutions to all of these problems are available as branches to this repo.
 
-** Repos **
+ **Repos**
 * fullVersion - All Done
 * prob1solution - Solution 1
 * prob2solution - Solution 2
