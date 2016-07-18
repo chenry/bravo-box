@@ -13,7 +13,6 @@ import org.springframework.util.StringUtils;
 
 import com.bravolt.bravobox.model.movie.MovieListRequest;
 import com.bravolt.bravobox.model.movie.MovieListResponse;
-import com.bravolt.bravobox.model.movie.MovieRentalRequest;
 import com.bravolt.bravobox.model.movie.MovieRequest;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -115,22 +114,6 @@ public class BravoBoxTest extends CamelSpringTestSupport {
 			assertTrue(types.contains(type));
 		}
 		assertEquals(5, responses.length);
-	}
-	
-	@Test
-	public void testMovieRent() {
-		Gson gson = new Gson();
-		MovieRentalRequest request = new MovieRentalRequest();
-		MovieRentalRequest response;
-		
-		request.setImdbId("tt0086567");
-		request.setCardExpiration("0718");
-		request.setEmail("dustin.clifford@gmail.com");
-		request.setZip("49428");
-		
-		response = gson.fromJson(template.requestBody(ENDPOINT_RENT, gson.toJson(request), String.class), MovieRentalRequest.class);
-		
-		assertTrue(response.getApproved());
 	}
 	
 	@Override

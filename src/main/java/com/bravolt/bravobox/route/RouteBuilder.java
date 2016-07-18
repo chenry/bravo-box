@@ -5,7 +5,6 @@ import org.apache.camel.model.dataformat.CsvDataFormat;
 import com.bravolt.bravobox.bean.MovieListResponseBuilder;
 import com.bravolt.bravobox.bean.ProcessMovieListRequest;
 import com.bravolt.bravobox.bean.ProcessMovieRequest;
-import com.bravolt.bravobox.bean.RentMovie;
 
 public class RouteBuilder extends org.apache.camel.builder.RouteBuilder {
 
@@ -24,9 +23,6 @@ public class RouteBuilder extends org.apache.camel.builder.RouteBuilder {
 			.bean(MovieListResponseBuilder.class)
 				.setProperty("inventoryDir").simple("properties:inventory.dir")
 				.setProperty("inventoryFileName").simple("properties:inventory.fileName");
-		
-		from("properties:inbound.rent")
-			.bean(RentMovie.class);
 		
 	}
 }
