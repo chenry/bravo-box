@@ -80,3 +80,15 @@ movie.
 
 ** Response Data **
 * None
+
+Notes
+-----
+
+Some possible solutions to all of these problems are available as branches to this repo.
+
+** Repos **
+* fullVersion - All Done
+* prob1solution - Solution 1
+* prob2solution - Solution 2
+* prob3solution - Solution 3
+* prob4solution - Solution 4
