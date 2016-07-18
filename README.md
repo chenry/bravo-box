@@ -84,7 +84,8 @@ movie.
 Notes
 -----
 
-Some possible solutions to all of these problems are available as branches to this repo.
+Some possible solutions to all of these problems are available as branches to this repo. To view the possible solution 
+just look at the *next* problems branch. Of course, for problem 4, view `fullVersion`.
 
  **Repos**
 * fullVersion - All Done
