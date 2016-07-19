@@ -34,6 +34,7 @@ have to follow these assumptions if you are writing your own solution from scrat
 It is assumed that you will have the following installed.
 * Java 8
 * Maven
+* Linux/OS X - paths will need to be changed for Windows machines
 
 Problem 1
 ---------
