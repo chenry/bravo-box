@@ -5,8 +5,8 @@ BravoBox - The Friendliest Movie Rental Ever!
 the movies are returned. As such, we do collect a credit card number, expiration date, email, etc.
 This is just in case we happen to need to buy another movie using that card should you decide to keep
 the movie.
-they
-Are budget is small, so we won't have a lot of features but we will need to let the renters obtain a list of all 
+
+Our budget is small, so we won't have a lot of features but we will need to let the renters obtain a list of all 
 movies, search by category, rent and return the movies.
 
 Basics
@@ -24,6 +24,16 @@ You may, also, find the following links helpful.
 * [Camel Testing](http://camel.apache.org/testing.html)
 * [Camel Spring](http://camel.apache.org/spring.html)
 * [OMdb API](http://www.omdbapi.com/)
+
+Assumptions
+-----------
+
+Here are some basic assumptions that you will need to know for the code provided in the solution branches. You don't 
+have to follow these assumptions if you are writing your own solution from scratch. You will, however, need to know these if you intend to run the code we've presented here.
+
+It is assumed that you will have the following installed.
+* Java 8
+* Maven
 
 Problem 1
 ---------
